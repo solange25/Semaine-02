@@ -1,18 +1,13 @@
-
-}
-body
-{
+body {
   width: 100%;
   background-color: #efefef;
 }
-.image
-{
+a {
+}
+.image {
   width: 40%;
   float: right;
 }
-.update
-{
+.update {
   margin-left: 15px;
-
-
 }
