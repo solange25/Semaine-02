@@ -4,10 +4,20 @@ body {
 }
 a {
 }
-.image {
-  width: 40%;
-  float: right;
+p {
+  text-align: justify;
 }
-.update {
-  margin-left: 15px;
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.image {
+  width: 20px;
+  float: left;
+}
+.profile-info {
+}
+.info {
+  margin-right: 15px;
 }
