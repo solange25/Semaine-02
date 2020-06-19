@@ -7,11 +7,12 @@
 }
 
 body {
-  background-color: #efefef;
+  background-color: #585c68;
   font-size: 14px;
   line-height: 22px;
-  color: aquamarine;
+  color: #555555;
 }
+
 .bold {
   font-weight: 700;
   font-size: 20px;
@@ -21,14 +22,17 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
+p {
+  text-align: justify;
+}
 .resume {
   width: 800px;
   height: auto;
   display: flex;
-  margin: 50px auto;
+  margin: 40px auto;
 }
 .resume .cv_left {
-  width: 250px;
+  width: 280px;
   background: #0bb5f4;
 }
 .resume .cv_pfofile {
@@ -36,8 +40,8 @@ body {
   height: 280px;
 }
 .resume .image {
-  width: 250;
-  height: 200;
+  width: 290;
+  height: 250;
 }
 .resume .cv_content {
   padding: 0 25px;
@@ -49,10 +53,10 @@ body {
   color: #fff;
 }
 .resume .cv_left .regular {
-  color: #b1e;
+  color: #b1eaff;
 }
 .resume .cv_item {
-  padding: 25px;
+  padding: 25px 0;
   border-bottom: 2px solid #b1eaff;
 }
 .resume .cv_left .cv_item:last-child {
@@ -65,6 +69,19 @@ body {
 }
 .resume .cv_left ul li :last-child {
   margin-bottom: 0;
+}
+.resume .cv_left ul li .data {
+  color: #b1eaff;
+}
+.resume .cv_left ul li .cv_skills {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font: size 16px;
+  position: relative;
 }
 .resume .cv_left ul li .cv_education {
   width: 35px;
@@ -91,7 +108,7 @@ body {
   background: #fff;
   padding: 25px;
 }
-.resume .cv_rigth .cv_education ul {
+resume .cv_rigth .cv_skills ul {
   padding-left: 40px;
   overflow: hidden;
 }
@@ -114,7 +131,7 @@ body {
 .resume.cv_rigth ul li:last-child .info {
   margin-bottom: 0;
 }
-.resume .cv_rigth .cv_work ul li:before,
+
 .resume .cv_rigth .cv_education ul li::before {
   content: '';
   position: absolute;
@@ -125,7 +142,7 @@ body {
   border-radius: 50%;
   border: 2px solid #0bb5f4;
 }
-.resume .cv_rigth .cv_work ul li::after,
+.resume .cv_rigth .cv_skills ul li::after,
 .resume .cv_rigth .cv_education li::after {
   content: '';
   position: absolute;
@@ -134,28 +151,4 @@ body {
   width: 3px;
   height: 115px;
   background: #0bb5f4;
-}
-.resume .cv_rigth .CV_hobby ul {
-  display: flex;
-  justify-content: space-between;
-}
-.resume .cv_rigth .CV_hobby ul {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #0bb5f4;
-  border-radius: 50%;
-  position: relative;
-  color: #0bb5f4;
-}
-.resume .cv_rigth .CV_hobby ul li::before {
-  content: '';
-  position: absolute;
-  top: 40px;
-  left: -52px;
-  width: 50px;
-  height: 2px;
-  background: #0bb5f4;
-}
-.resume .cv_rigth .CV_hobby ul li:last-child::before {
-  display: none;
 }
