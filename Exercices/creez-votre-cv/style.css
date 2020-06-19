@@ -1,23 +1,161 @@
-body {
-  width: 100%;
-  background-color: #efefef;
-}
-a {
-}
-p {
-  text-align: justify;
-}
 * {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
+  list-style: none;
+  font-family: monospace, sans-serif;
 }
-.image {
-  width: 20px;
-  float: left;
+
+body {
+  background-color: #efefef;
+  font-size: 14px;
+  line-height: 22px;
+  color: aquamarine;
 }
-.profile-info {
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-.info {
+.semi_bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+.resume {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+.resume .cv_left {
+  width: 250px;
+  background: #0bb5f4;
+}
+.resume .cv_pfofile {
+  width: 100%;
+  height: 280px;
+}
+.resume .image {
+  width: 250;
+  height: 200;
+}
+.resume .cv_content {
+  padding: 0 25px;
+}
+.resume .title {
+  margin-bottom: 20px;
+}
+.resume .cv_left .bold {
+  color: #fff;
+}
+.resume .cv_left .regular {
+  color: #b1e;
+}
+.resume .cv_item {
+  padding: 25px;
+  border-bottom: 2px solid #b1eaff;
+}
+.resume .cv_left .cv_item:last-child {
+  border-bottom: 0px;
+}
+.resume .cv_left ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.resume .cv_left ul li :last-child {
+  margin-bottom: 0;
+}
+.resume .cv_left ul li .cv_education {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
   margin-right: 15px;
+  font: size 16px;
+  position: relative;
+}
+.resume .cv_left .cv_skills ul li .skill_per {
+  width: 15%;
+}
+.resume .cv_left .cv_skills ul li .skills_progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+.resume .cv_rigth {
+  width: 530px;
+  background: #fff;
+  padding: 25px;
+}
+.resume .cv_rigth .cv_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+.resume .cv_rigth .cv_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+.resume .cv_rigth ul li {
+  position: relative;
+}
+.resume .cv_rigth ul li .date {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.resume .cv_rigth ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume.cv_rigth ul li:last-child .info {
+  margin-bottom: 0;
+}
+.resume .cv_rigth .cv_work ul li:before,
+.resume .cv_rigth .cv_education ul li::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+.resume .cv_rigth .cv_work ul li::after,
+.resume .cv_rigth .cv_education li::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 3px;
+  height: 115px;
+  background: #0bb5f4;
+}
+.resume .cv_rigth .CV_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+.resume .cv_rigth .CV_hobby ul {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+.resume .cv_rigth .CV_hobby ul li::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+.resume .cv_rigth .CV_hobby ul li:last-child::before {
+  display: none;
 }
