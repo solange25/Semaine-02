@@ -4,17 +4,22 @@ const myNew = "Bonjour je m'appelle";
 let prénom = 'Solange';
 console.log(myNew + ' ' + prénom);
 const myMe = "j'ai";
-let myAge = '29 ans';
-console.log(myNew + ' ' + prénom + ' ' + myMe + ' ' + myAge);
+let myAge = 29;
+const myAg = 'ans';
+console.log(myNew + ' ' + prénom + ' ' + myMe + ' ' + myAge + ' ' + myAg);
 let siriusTeamArray;
-let myGoupe = [
+let myGroupe = [
+  'sara',
   'solange',
-  'nana',
   'claudine',
   'nadia',
   'papi',
-  'kudu',
+  'samanth',
   'tania',
-  'mani',
+  'regine',
 ];
-console.log(myGoupe[6]);
+console.log(myGroupe[6]);
+console.log(myGroupe[1]);
+const Student = { name: 'solange', firstname: 'marie', age: 29 };
+console.log(Student);
+console.log(Student.firstname);
